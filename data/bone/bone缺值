@@ -1,0 +1,19 @@
+15
+variable Recipient_age {
+    type discrete [ 5 ] { 0, 10, 15, 20, 5 };
+}
+
+20
+variable CD34_kgx10d6 {
+    type discrete [ 6 ] { 0, 10, 20, 30, 40, 50 };
+}
+
+15
+variable CD3d_kgx10d8 {
+    type discrete [ 5 ] { 0, 10, 15, 20, 5 };
+}
+
+40
+variable Rbody_mass {
+    type discrete [ 4 ] { 0, 20, 40, 60 };
+}

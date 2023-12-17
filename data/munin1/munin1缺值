@@ -1,0 +1,42 @@
+52
+variable R_MED_DCV_EW {
+  type discrete [ 10 ] { M_S60, M_S56, M_S52, M_S44, M_S36, M_S28, M_S20, M_S14, M_S08, M_S00 };
+}
+variable R_MED_DCV_EW {
+  type discrete [ 10 ] { 60, 56, 52, 44, 36, 28, 20, 14, 8, 0 };
+}
+
+0.1(10)
+variable R_APB_ALLAMP_WA {
+  type discrete [ 9 ] { ZERO, A0_01, A0_10, A0_30, A0_70, A1_00, A2_00, A4_00, A8_00 };
+}
+variable R_APB_ALLAMP_WA {
+  type discrete [ 9 ] { 0, 0.01, 0.1, 0.3, 0.7, 1.0, 2, 4, 8 };
+  type discrete [ 9 ] { 0, 1, 10, 30, 70, 100, 200, 400, 800 };
+}
+
+44
+variable R_MEDD2_ALLCV_WD {
+  type discrete [ 9 ] { M_S60, M_S52, M_S44, M_S36, M_S28, M_S20, M_S14, M_S08, M_S00 };
+}
+variable R_MEDD2_ALLCV_WD {
+  type discrete [ 9 ] { 60, 52, 44, 36, 28, 20, 14, 8, 0 };
+}
+
+0.1(10)
+variable R_MEDD2_ALLAMP_WD {
+  type discrete [ 6 ] { ZERO, A0_01, A0_10, A0_30, A0_70, A1_00 };
+}
+variable R_MEDD2_ALLAMP_WD {
+  type discrete [ 6 ] { 0, 0.01, 0.1, 0.3, 0.7, 1.0 };
+  type discrete [ 9 ] { 0, 1, 10, 30, 70, 100 };
+}
+
+查询变量修改
+variable R_APB_QUAN_MUPPOLY {
+  type discrete [ 3 ] { __12_, 12_24_, __24_ };
+  type discrete [ 3 ] { 12, 18, 24 };
+}
+
+
+

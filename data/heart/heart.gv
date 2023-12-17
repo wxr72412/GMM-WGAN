@@ -1,0 +1,15 @@
+digraph network {
+	age -> thal
+	chol -> fbs
+	cp -> trestbps
+	exang -> cp
+	exang -> slope
+	num -> ca
+	num -> exang
+	num -> thalach
+	restecg -> thalach
+	sex -> thal
+	slope -> oldpeak
+	thal -> num
+	trestbps -> chol
+}

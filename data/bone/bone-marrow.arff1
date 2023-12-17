@@ -1,0 +1,88 @@
+The dataset describes pediatric patients with several hematologic diseases: malignant disorders
+(i.a. patients with acute lymphoblastic leukemia, with acute myelogenous leukemia,
+with chronic myelogenous leukemia, with myelodysplastic syndrome) and nonmalignant cases
+(i.a. patients with severe aplastic anemia, with Fanconi anemia, with X-linked adrenoleukodystrophy).
+该数据集描述了患有多种血液疾病的儿科患者：恶性疾病
+（即患有急性淋巴细胞白血病、急性髓性白血病、慢性髓性白血病、患有骨髓增生异常综合征的患者）和非恶性病例
+（即患有严重再生障碍性贫血、范可尼贫血的患者）和 X连锁肾上腺脑白质营养不良）。
+
+All patients were subject to the unmanipulated allogeneic unrelated donor hematopoietic stem cell transplantation.
+所有患者均接受了未经操作的异基因无关供体造血干细胞移植。
+
+The motivation of this study was to identify the most important factors influencing the success or
+failure of the transplantation procedure.
+本研究的目的是确定影响移植手术成功或失败的最重要因素。
+
+In particular, verification of the research hypothesis that increased dosage of
+CD34 cells / kg extends overall survival time without simultaneous occurrence
+of undesirable events affecting patients' quality of life.
+特别是，对增加CD34细胞/kg剂量的研究假设进行验证，可延长总体生存时间，而不会同时发生影响患者生活质量的不良事件。
+
+
+%
+%Source:
+%
+%Provide the names, email addresses, institutions, and other contact information of the donors and creators of the data set. 
+%
+%Marek Sikora^{1,2} (marek.sikora '@' polsl.pl), Lukasz Wrobel^{1} (lukasz.wrobel '@' polsl.pl),  
+%(1) Institute of Computer Science, Silesian University of Technology, 44-100 Gliwice, Poland 
+%(2) Institute of Innovative Technologies EMAG, 40-189 Katowice, Poland
+%
+%
+%Data Set Information:
+%
+%The set contains 187 examples characterized by 37 attributes. 
+%The meaning of the following features is as follows:
+
+%- Recipient gender 受体性别 - Male - 1, Female - 0,
+%- Stemcell source 干细胞来源 - Source of hematopoietic stem cells (Peripheral blood 外周血 - 1, Bone marrow 骨髓 - 0),
+%- Donor age 供体 - Age of the donor at the time of hematopoietic stem cells apheresis 造血干细胞单采术时供体的年龄
+%- Donor age 35 - Donor age <35 - 0, Donor age >=35 - 1
+%- IIIV - Development of acute graft versus host disease stage II or III or IV (Yes - 1, No - 0), 急性移植物抗宿主病 II 期或 III 期或 IV 期的发展
+%- Gender match 性别匹配 - Compatibility of the donor and recipient according to their gender (Female to Male - 1, Other - 0), 捐赠者和接受者的性别匹配度
+%- Donor ABO - ABO blood group of the donor of hematopoietic stem cells (0 - 0, 1, A, B=-1, AB=2), 造血干细胞供体的 ABO 血型
+%- Recipient ABO - ABO blood group of the recipient of hematopoietic stem cells (0 - 0, 1, A, B=-1, AB=2), 造血干细胞受体的 ABO 血型
+%- Recipient Rh - Presence of the Rh factor on recipients red blood cells ('+' - 1, '-' - 0), 受体红细胞上存在 Rh 因子
+%- ABO Match - Compatibility of the donor and the recipient of hematopoietic stem cells according to ABO blood group (matched - 1, mismatched - 1) 根据 ABO 血型的造血干细胞供体和受体的相容性
+
+%- CMV status - Serological compatibility of the donor and the recipient of hematopoietic stem cells according to cytomegalovirus infection prior to transplantation (the higher the value the lower the compatibility)
+根据移植前巨细胞病毒感染情况，造血干细胞供体和受体的血清学相容性（数值越高，相容性越低）
+
+%- RecipientCMV - Presence of cytomegalovirus infection in the donor of hematopoietic stem cells prior to transplantation (presence - 1, absence - 0) 移植前造血干细胞供体中存在巨细胞病毒感染
+%- Disease - Type of disease (ALL,AML,chronic,nonmalignant,lymphoma) 疾病类型（ALL、AML、慢性、非恶性、淋巴瘤）
+%- Risk group 风险组 - High risk - 1, Low risk - 0,
+%- Txpostrelapse - The second bone marrow transplantation after relapse (No - 0; Yes - 1), 复发后的第二次骨髓移植
+%- Disease group - Type of disease (malignant - 1, nonmalignant - 0), 疾病类型（恶性 - 1，非恶性 - 0）
+%- HLA match - Compatibility of antigens of the main histocompatibility complex of the donor and the recipient of hematopoietic stem cells
+according to ALL international BFM SCT 2008 criteria (10/10 - 0, 9/10 - 1, 8/10 - 2, 7/10 - 3 (allele/antigens)), 等位基因/抗原
+根据 ALL 国际 BFM SCT 2008 标准，供体和造血干细胞受体的主要组织相容性复合体抗原的相容性
+
+%- HLA mismatch - HLA matched - 0, HL mismatched - 1,
+%- Antigen 抗原 - In how many anigens there is difference beetwen the donor nad the recipient 供体和受体之间存在多少抗原 (-1 - no differences, 0 - one difference,1 (2) - two (three) diffences)
+
+%- Allel 等位基因 - In how many allele there is difference beetwen the donor nad the recipient 供体和受体之间有多少等位基因有差异 {-1 no differences,0 - one difference, 1 (2) (3) - two, (tree, four) differences)
+%- HLAgrI - The differecne type beetwien the donor and the recipient 供体和受体之间的差异类型
+(HLA mateched - 0, HLA 匹配
+the difference is in only one antigen - 1, 差异仅在于一种抗原
+the difference is only in one allel - 2, 差异仅在一个等位基因
+the difference is only in DRB1 cell - 3, 差异仅在 DRB1 细胞
+two differences (two allele or two antignes) - 4, 两个差异（两个等位基因或两个抗原）
+two differences (two allele or two antignes) - 5), 两个差异（两个等位基因或两个抗原）
+
+%- Recipient age - Age of the recipient of hematopoietic stem cells at the time of transplantation, 移植时造血干细胞受体的年龄
+%- Recipient age10 - Recipient age <10 - 0, Recipient age>=10 - 1,
+%- Recipient age int - Recipient age in (0,5] - 0, (5, 10] - 1, (10, 20] - 2,
+%- Relapse 复发 - Reoccurrence of the disease 疾病复发 (No - 0, Yes - 1),
+%- aGvHD III IV - Development of acute graft versus host disease stage III or IV (Yes - 0, No - 1) 急性移植物抗宿主病 III 期或 IV 期的发展
+%- extcGvHD - Development of extensive chronic graft versus host disease (Yes - 0, No - 1) 发展为广泛的慢性移植物抗宿主病
+%- CD34kgx10d6 - CD34+ cell dose per kg of recipient body weight (10^6/kg) 每公斤接受者体重的 CD34+ 细胞剂量
+%- CD3dCD34 - CD3+ cell to CD34+ cell ratio CD3+ 细胞与 CD34+ 细胞的比例
+
+%- CD3dkgx10d8 - CD3+ cell dose per kg of recipient body weight (10^8/kg) 每公斤受体体重的 CD3+ 细胞剂量
+%- Rbodymass - Body mass of the recipient of hematopoietic stem cells at the time of transplantation, 移植时造血干细胞受体的体重
+%- ANCrecovery - Time to neutrophils recovery defined as neutrophils count >0.5 x 10^9/L  中性粒细胞恢复时间定义为中性粒细胞计数
+%- PLTrecovery - Time to platelet recovery defined as platelet count >50000/mm3, 血小板恢复时间定义为血小板计数
+%- time_to_aGvHD_III_IV - Time to development of acute graft versus host disease stage III or IV 发展为急性移植物抗宿主病 III 期或 IV 期的时间
+%- survival_time numeric 生存时间数字
+%- survival_status 生存状态 (0 - alive, 1 - dead)
+%

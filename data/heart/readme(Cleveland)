@@ -1,0 +1,74 @@
+age:该朋友的年龄
+sex:该朋友的性别(1 = 男性,0 = 女性)
+cp: 经历过的胸痛类型(值1: 典型心绞痛，值2: 非典型性心绞痛，值3: 非心纹痛，值0: 无症状)
+trestbps: 该朋友的静息血压(入院时的毫米汞柱)
+chol: 该朋友的胆固醇测量值，单位: mg/dl
+
+fbs:人的空腹血糖 (> 120 mg/dl，1=真: 0=假)
+restecg: 静息心电图测量(0=正常，1=惠有ST-T波异常，2=根据Estes的标准显示可能或确定的左心室肥大)
+thalach: 这朋友达到的最大心率
+exang: 运动引起的心绞痛 (1=有过: 0=没有)
+oldpeak: ST抑制，由运动引起的相对于休息引|起的
+
+slope: 最高运动ST段的斜率 (值0:上坡，值1:平坦，值2:下地)
+ca: 黄光显色的主要血管数目 (0-4)
+thal: 一种称为地中海贫血的血液疾病 (1=正常:2=固定缺陷: 3=可逆缺陷)
+target: 心脏病 (0=否，1=是)
+
+1. #3  (age) C
+age: age in years
+
+2. #4  (sex)
+sex: sex (1 = male; 0 = female)
+
+3. #9  (cp)
+cp: chest pain type
+        -- Value 1: typical angina
+        -- Value 2: atypical angina
+        -- Value 3: non-anginal pain
+        -- Value 4: asymptomatic
+
+4. #10 (trestbps) C
+trestbps: resting blood pressure (in mm Hg on admission to the hospital)
+
+5. #12 (chol) C
+chol: serum cholestoral in mg/dl
+
+6. #16 (fbs)
+(fasting blood sugar > 120 mg/dl)  (1 = true; 0 = false)
+
+7. #19 (restecg)
+restecg: resting electrocardiographic results
+        -- Value 0: normal
+        -- Value 1: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)
+        -- Value 2: showing probable or definite left ventricular hypertrophy by Estes' criteria
+
+8. #32 (thalach) C
+thalach: maximum heart rate achieved
+
+9. #38 (exang)
+exang: exercise induced angina (1 = yes; 0 = no)
+
+10. #40 (oldpeak) C
+oldpeak = ST depression induced by exercise relative to rest
+
+11. #41 (slope)
+slope: the slope of the peak exercise ST segment
+        -- Value 1: upsloping
+        -- Value 2: flat
+        -- Value 3: downsloping
+
+12. #44 (ca)
+ca: number of major vessels (0-3) colored by flourosopy
+
+13. #51 (thal)
+thal: 3 = normal; 6 = fixed defect; 7 = reversable defect
+
+14. #58 (num)       (the predicted attribute)
+num: diagnosis of heart disease (angiographic disease status)
+        -- Value 0: < 50% diameter narrowing
+        -- Value 1: > 50% diameter narrowing
+        (in any major vessel: attributes 59 through 68 are vessels)
+
+        Database:  0   1   2   3   4 Total
+        Cleveland: 164  55  36  35  13   303

@@ -1,0 +1,45 @@
+1 Recipient gender      {1,0} 《受体》性别（男性 - 1，女性 - 0）
+2 Stemcell source       {1,0} 干细胞来源(Peripheral blood 外周血 - 1, Bone marrow 骨髓 - 0),
+3 C Donor age             numeric 《供体》年龄
+4 Donor age 35          {0,1} 《供体》年龄
+5 IIIV                  {1,0} 是否发展为急性移植物抗宿主病II 期、III 期或IV期阶段 (Yes - 1, No - 0)
+6 Gender match          {0,1} 性别匹配度 (女 to 男 - 1, 其他 - 0)
+7 Donor ABO             {1,-1,2,0} 《供体》血型 (O=0, A=1, B=-1, AB=2)
+8 Recipient ABO         {1,-1,2,0} 《受体》血型 (O=0, A=1, B=-1, AB=2)
+9 Recipient Rh          {1,0} 《受体》红细胞上是否存在 Rh 因子 ('+' - 1, '-' - 0)
+10 ABO match            {0,1} 血型匹配 (matched - 1, mismatched - 1)
+11 CMV status           {3,2,1,0} 根据移植前巨细胞病毒感染情况，造血干细胞供体和受体的血清学相容性（数值越高，相容性越低）
+12 Donor CMV            {1,0} 移植前《供体》中造血干细胞是否存在巨细胞病毒感染 (No - 0; Yes - 1)
+13 Recipient CMV        {1,0} 移植前《受体》中造血干细胞是否存在巨细胞病毒感染 (No - 0; Yes - 1)
+14 Disease              {ALL,AML,chronic,nonmalignant,lymphoma} 疾病类型（ALL、AML、慢性、非恶性、淋巴瘤）
+15 Risk group           {1,0} 风险组(High risk - 1, Low risk - 0)
+16 Txpost relapse       {0,1} 复发后是否进行第二次骨髓移植(No - 0; Yes - 1)
+17 Disease group        {1,0} 疾病类型（恶性 - 1，非恶性 - 0）
+18 HLA match            {0,1,3,2} 供体和受体的主要组织相容性复合体抗原的相容性 (10/10 - 0, 9/10 - 1, 8/10 - 2, 7/10 - 3 (allele/antigens)等位基因/抗原)
+19 HLA mismatch         {0,1} (HLA matched - 0, HL mismatched - 1)
+20 Antigen              {-1,1,0,2} 供体和受体之间的抗原差异    (-1 - no differences, 0 - one difference, 1 (2) - two (three) diffences)
+21 Allel                {-1,0,2,1,3} 供体和受体之间的等位基因差异 (-1 - no differences, 0 - one difference, 1 (2) (3) - two, (tree, four) differences)
+22* HLAgrI              {0,1,7,3,2,4,5} 供体和受体之间的HLA差异类型
+23 C Recipient age        numeric 《受体》年龄
+24 Recipient age 10     {0,1} 《受体》年龄
+25 Recipient age int    {0,1,2} 《受体》年龄
+26 Relapse              {0,1} 疾病复发 (No - 0, Yes - 1)
+27 aGvHD III IV         {0,1} 是否发展为急性 移植物抗宿主病 III 期或 IV 期 (Yes - 0, No - 1)
+28 extcGvHD             {1,0} 是否发展为广泛的慢性移植物抗宿主病 (Yes - 0, No - 1)
+29 C  CD34 kgx10d6        numeric 受体每公斤体重的CD34细胞剂量
+30 C CD3d CD34            numeric CD3细胞与CD34细胞的比例
+31 C CD3d kgx10d8         numeric 受体每公斤体重的CD3细胞剂量
+32 C Rbody mass           numeric 移植时受体的体重
+33 C ANC recovery         numeric 中性粒细胞恢复为定义的中性粒细胞计数的时间
+34 C PLT recovery         numeric 血小板恢复定义的血小板计数的时间
+35 C time_to_aGvHD_III_IV numeric 发展为急性移植物抗宿主病 III 期或 IV 期的时间
+36 C survival_time        numeric 生存时间
+37 survival_status      numeric 生存状态
+
+
+22* HLAgrI {0,1,7,3,2,4,5} 供体和受体之间的HLA差异类型
+the difference is in only one antigen - 1, 差异仅在于一种抗原
+the difference is only in one allel - 2, 差异仅在一个等位基因
+the difference is only in DRB1 cell - 3, 差异仅在 DRB1 细胞
+two differences (two allele or two antignes) - 4, 两个差异（两个等位基因或两个抗原）
+two differences (two allele or two antignes) - 5), 两个差异（两个等位基因或两个抗原）

@@ -1,0 +1,74 @@
+hepar
+
+variable triglycerides {
+  type discrete [ 3 ] { a17_4, a3_2, a1_0 };
+}
+variable phosphatase {
+  type discrete [ 3 ] { a4000_700, a699_240, a239_0 };
+}
+variable inr {
+  type discrete [ 3 ] { a200_110, a109_70, a69_0 };
+}
+variable urea {
+  type discrete [ 3 ] { a165_50, a49_40, a39_0 };
+}
+variable ESR {
+  type discrete [ 3 ] { a200_50, a49_15, a14_0 };
+}
+variable amylase {
+  type discrete [ 3 ] { a1400_500, a499_300, a299_0 };
+}
+variable cholesterol {
+  type discrete [ 3 ] { a999_350, a349_240, a239_0 };
+}
+variable albumin {
+  type discrete [ 3 ] { a70_50, a49_30, a29_0 };
+}
+
+谷氨酰胺转肽酶
+variable ggtp {
+  type discrete [ 4 ] { a640_70, a69_30, a29_10, a9_0 };
+}
+谷草转氨酶
+variable ast {
+  type discrete [ 4 ] { a700_400, a399_150, a149_40, a39_0 };
+}
+
+年龄(82)
+variable age {
+  type discrete [ 4 ] { age65_100, age51_65, age31_50, age0_30 };
+}
+variable age {
+  type discrete [ 4 ] { 82, 58, 40, 15 };
+}
+
+胆红素(4)
+variable bilirubin {
+  type discrete [ 4 ] { a88_20, a19_7, a6_2, a1_0 };
+}
+variable bilirubin {
+  type discrete [ 4 ] { 54, 13, 4, 0 };
+}
+
+血小板(125)
+variable platelet {
+  type discrete [ 4 ] { a597_300, a299_150, a149_100, a99_0 };
+}
+variable platelet {
+  type discrete [ 4 ] { 450, 225, 125, 50 };
+}
+
+谷丙转氨酶(67)
+variable alt {
+  type discrete [ 4 ] { a850_200, a199_100, a99_35, a34_0 };
+}
+variable alt {
+  type discrete [ 4 ] { 525, 150, 67, 17 };
+}
+
+
+
+variable ChHepatitis {
+  type discrete [ 3 ] { active, persistent, absent };
+  type discrete [ 3 ] { 0, 1, 2 };
+}
