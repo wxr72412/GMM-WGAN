@@ -1,1 +1,1 @@
-# GMM-WGAN
+The codes of EAAI paper
